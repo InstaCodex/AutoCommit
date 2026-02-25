@@ -1,5 +1,8 @@
 name: Auto Commit Bot
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 */12 * * *"   # tiap 12 jam
