@@ -1,0 +1,25 @@
+name: Auto Commit Bot
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # tiap 12 jam
+  workflow_dispatch:        # bisa jalan manual juga
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update timestamp
+        run: date > TIMESTAMP.txt
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "InstaCodex"
+          git config --global user.email "kevinmitnick602@gmail.com"
+          git add .
+          git commit -m "auto update timestamp" || echo "no changes"
+          git push
