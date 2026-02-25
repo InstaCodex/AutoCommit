@@ -1,2 +1,2 @@
 
-<img src="https://media1.tenor.com/m/lA_EnXBI4QsAAAAC/bots-parade.gif" alt="Profile Image" width="100%">
+<img src="https://raw.githubusercontent.com/InstaCodex/InstaCodex/main/Assets/IMG_20240806_140015.png" alt="Profile Image" width="100%">
